@@ -1,0 +1,25 @@
+.header {
+    width: 100%;
+    background-color: #df5607;
+    padding-top: 6em;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+
+    }
+    
+    .header-avatar{
+      max-width:200px;
+      justify-content: center;
+      flex-direction: column;
+    }
+    
+    .header-avatar img {
+      width: 100%;
+    }
+    
+    .header-name{
+      font-size:1.2em; 
+    }
