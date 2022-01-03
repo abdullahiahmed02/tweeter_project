@@ -67,7 +67,7 @@ const fetchTweets= ()=> {
         </main>
     
         <footer class="tweet">
-          <p class="created_at">${tweetData.created_at}</p>
+          <p class="created_at">${timeago.format(tweetData.created_at)}</p>
           <div class="icons">
             <div class="flag"><i class="fas fa-flag"></i></div>
             <div class="retweet"><i class="fas fa-retweet"></i></div>
