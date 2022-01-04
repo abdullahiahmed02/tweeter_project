@@ -30,6 +30,16 @@ body {
   color: #00aced;
 }
 
+.error {
+  margin: 10px 0px;
+  padding: 12px;
+  color: #D8000C;
+  font-size: medium;
+  font-family: sans-serif;
+  background-color: #FFD2D2;
+  border: red;
+}
+
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */

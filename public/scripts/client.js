@@ -16,19 +16,27 @@ const fetchTweets= ()=> {
     });
   }   
   fetchTweets()
+  $('.error').hide()
   
   $('#form-new-tweet').on('submit', function(event) {
+
     event.preventDefault();
     const serializedData = $(this).serialize();
     const tweetLength = $("#tweet-text").val().length
     if (tweetLength > 140) {
+      document.querySelector('.error').innerHTML = 'text too long. must be less than 140'
+      $('.error').show() 
       console.log(" must be less than 140 characters")
+      // alert("ERROR: tweet must be less than 140 characters")
       return false
     
     }
 
     else if ($("#tweet-text").val() === '') {
-      console.log("empty tweet")
+      document.querySelector('.error').innerHTML = 'Sorry, Tweet cannot be empty'
+      $('.error').show() 
+      console.log("Sorry, tweet cannot be empty tweet")
+      // alert("ERROR: EMPTY TWEET")
       return false
     }
   else { 
