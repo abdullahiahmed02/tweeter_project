@@ -42,7 +42,9 @@ const fetchTweets= ()=> {
   else { 
 
     $.post('/tweets', serializedData, (response) => {
+      $("#form-new-tweet").trigger("reset")
       fetchTweets();
+
      });
 
   }

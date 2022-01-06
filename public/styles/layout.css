@@ -23,6 +23,27 @@ body {
   font-style: italic;
 }
 
+@media only screen and (min-width: 900px) {
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+  } 
+
+  .container {
+    padding-top: 150px;
+    margin-right: 100px;
+
+  }
+  .header { 
+    margin: 100px;
+    margin-top: 300px;
+  }
+ 
+}
+
 .tweeter-logo {
   font-family: 'Bungee', cursive;
   font-style: italic;
