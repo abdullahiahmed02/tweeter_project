@@ -5,7 +5,7 @@ const fetchTweets = () => {
     method: "GET",
     dataType: "json",
     success: function (data) {
-      console.log(data)
+      console.log("these are our tweets",data)
       document.getElementById("error-message").style.display = "none"
       renderTweets(data)
     },
@@ -18,11 +18,12 @@ const fetchTweets = () => {
 }
 
 const renderTweets = function (tweets) {
-  console.log(tweets)
-  $("#tweets-container").empty();
+  // console.log(tweets)
+  $("#tweets").empty();
   tweets.forEach(tweet => {
     const $newTweet = createTweetElement(tweet)
-    $("#tweets-container").prepend($newTweet)
+    console.log("this is the new tweet",$newTweet)
+    $("#tweets").prepend($newTweet)
   });
 
 }
@@ -83,7 +84,7 @@ $(document).ready(function () {
     else {
 
       $.post('/tweets', serializedData, (response) => {
-        console.log(response)
+        console.log("successful post of a new tweet")
         $("#tweet-text").val('');
         $(".counter").val('140');
         fetchTweets();

@@ -1,79 +1,77 @@
 article {
-    margin-top: 1.5em;
-    margin-bottom: 1.5em;
-    border: 5px solid gray;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  article:hover {
-    box-shadow: 7px 7px lightgray;
-  }
-  
-  header.tweet {
-    padding: 25px;
-    height: 70px;
-    width: auto;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .handle {
-    opacity: 0.8;
-    font-weight: bold;
-    color: lightskyblue;
-  }
-  
-  div.tweet {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  main.content {
-    min-height: 120px;
-    width: 95%;
-    word-wrap: break-word;
-    border: none;
-    border-bottom: 4px solid gray;
-    display: flex;
-    align-items: center;
-    padding: 10px 15px 10px 15px;
-  }
-  
-  .avatars {
-    margin-right: 15px;
-    align-self: center;
-  }
-  
-  footer {
-    font-size: 18px;
-    padding-right: 25px;
-    padding-left: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  
-  div.icons {
-    margin: 7px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-  }
-  
-  footer div + div {
-    padding-left: 5px;
-  }
-  
-  footer div :hover {
-    color: lightskyblue;
-  }
-  
-  p.created_at {
-    margin: 7px;
-    display: flex;
-    align-items: flex-end;
-  }
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  border: 5px solid gray;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+article:hover {
+  box-shadow: 7px 7px lightgray;
+}
+
+header.tweet {
+  padding: 25px;
+  height: 70px;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.handle {
+  opacity: 0.8;
+  font-weight: bold;
+  color: lightskyblue;
+}
+
+div.tweet {
+  display: flex;
+  flex-direction: row;
+}
+
+main.content {
+  min-height: 120px;
+  width: 95%;
+  word-break: break-word !important;
+  border: none;
+  border-bottom: 4px solid gray;
+  display: flex;
+  align-items: center;
+  padding: 10px 15px 10px 15px;
+}
+
+.avatars {
+  margin-right: 15px;
+  align-self: center;
+}
+
+footer {
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+div.icons {
+  margin: 7px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+footer div + div {
+  padding-left: 5px;
+}
+
+footer div :hover {
+  color: lightskyblue;
+}
+
+p.created_at {
+  margin: 7px;
+  display: flex;
+  align-items: flex-end;
+}
