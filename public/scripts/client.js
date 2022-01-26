@@ -13,7 +13,6 @@ const fetchTweets = () => {
     error: (err) => {
       console.log(err)
     },
-
   });
 }
 
@@ -25,7 +24,6 @@ const renderTweets = function (tweets) {
     console.log("this is the new tweet",$newTweet)
     $("#tweets").prepend($newTweet)
   });
-
 }
 
 const createTweetElement = function (tweetData) {
@@ -57,7 +55,6 @@ const createTweetElement = function (tweetData) {
       `)
   return $tweet;
 }
-
 // renderTweets(data);
 
 $(document).ready(function () {
